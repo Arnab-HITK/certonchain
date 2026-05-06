@@ -211,3 +211,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const fileInput = document.getElementById("certFiles");
   if (fileInput) fileInput.addEventListener("change", validateFiles);
 });
+
+window.connectWallet = connectWallet;
+window.issueCertificate = issueCertificate;

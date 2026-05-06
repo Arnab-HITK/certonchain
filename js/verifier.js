@@ -165,3 +165,5 @@ async function verifyCertificates() {
     }
   }
 }
+
+window.verifyCertificates = verifyCertificates;
