@@ -135,7 +135,11 @@ async function verifyCertificates() {
 
       const elapsed = ((performance.now() - startTime) / 1000).toFixed(2);
 
-      const [name, course, date, ipfs, isValid] = result;
+     const name = result[0];
+     const course = result[1];
+     const date = result[2];
+     const ipfs = result[3];
+     const isValid = result[4];
 
       if (isValid) {
         document.getElementById(entryId).innerHTML = `
